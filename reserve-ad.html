@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0cbb892daa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/advertisement.css">
+    <link rel="stylesheet" href="./assets/css/reserve-ad.css">
+
+    <title>تبلیغات</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="logo">
+                    <img src="./assets/img/logoDolatsara.svg" alt="logo">
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">اگهی ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">مشاوران</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" href="#">مشاوران</button>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                مجله خبری
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">آیتم اول</a></li>
+                                <li><a class="dropdown-item" href="#">آیتم دوم</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">آیتم متفاوت</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ثبت درخواست</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">مشاوران</a>
+                        </li>
+                    </ul>
+
+                    <!-- <div class="urgent">
+                        <a href="" >
+                            آگهی فوری
+                        </a>
+                    </div> -->
+                    <div class="phone">
+                        <a href="tel:021-8330568" title="phone">
+                            <span class="number">8330568</span>
+                            <span class="perfix">-021</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="profile">
+
+                    <div class="dashboard">
+                        <img src="./assets/img/user-alt-solid.png" alt="">
+                        <span>
+
+                            ثبت نام / ورود
+                        </span>
+                    </div>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"></a>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ورود / ثبت نام</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-navigation">
+                        <nav>
+                            <ul class="modal-tabs">
+                                <li><a data-bs-content="mobileLogin" href="#" class="selected">ورود با شماره موبایل</a>
+                                </li>
+                                <li><a data-bs-content="usernsmeLogin" href="#">ورود با نام کاربری</a></li>
+                                <li><a data-bs-content="signup" href="#">ثبت نام</a></li>
+
+
+                            </ul>
+                        </nav>
+                        <div class="modal-tab-content">
+                            <div class="content selected" data-bs-content="mobileLogin">
+
+                                <div class="form">
+                                    <div class="title">
+                                        <h5>ورود با شماره موبایل</h5>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="mobile">
+                                            <span class="input-title">شماره موبایل</span>
+                                            <input type="text" placeholder="شماره موبایل خود را وارد کنید">
+                                        </div>
+                                        <div class="btnBox">
+                                            <button class="RecBtn red login">ورود</button>
+                                            <div class="tags">
+                                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                                <a href="#"><i class="fab fa-google"></i></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content" data-bs-content="usernsmeLogin">
+                                <div class="form">
+                                    <div class="title">
+                                        <h5>ورود با نام کاربری</h5>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="username">
+                                            <span class="input-title">نام کاربری</span>
+                                            <input type="text" placeholder="نام کاربری خود را وارد کنید">
+                                        </div>
+                                        <div class="password">
+                                            <span class="input-title">رمز عبور</span>
+                                            <input type="text" placeholder="رمز عبور خود را وارد کنید">
+                                        </div>
+                                        <div class="btnBox">
+                                            <button class="RecBtn red login">ورود</button>
+                                            <div class="tags">
+                                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                                <a href="#"><i class="fab fa-google"></i></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content" data-bs-content="signup">
+                                <div class="form">
+                                    <div class="title">
+                                        <h5>ثبت نام</h5>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="name">
+                                            <span class="input-title">نام و نام ‌خانوادگی</span>
+                                            <input type="text" placeholder="نام و نام خانوادگی خود را وارد کنید">
+                                        </div>
+                                        <div class="mobile">
+                                            <span class="input-title">شماره موبایل</span>
+                                            <input type="text" placeholder="شماره موبایل خود را وارد کنید">
+                                        </div>
+                                        <div class="username">
+                                            <span class="input-title">نام کاربری</span>
+                                            <input type="text" placeholder="نام کاربری خود را انتخاب کنید">
+                                        </div>
+                                        <div class="password">
+                                            <span class="input-title">رمز عبور</span>
+                                            <input type="text" placeholder="رمز عبور خود را انتخاب کنید">
+                                        </div>
+                                        <div class="password-confirm">
+                                            <span class="input-title">تکرار رمز عبور</span>
+                                            <input type="text" placeholder="رمز عبور خود را دوباره انتخاب کنید">
+                                        </div>
+
+                                        <div class="btnBox">
+                                            <button class="RecBtn red login">ثبت نام</button>
+                                            <div class="tags">
+                                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                                <a href="#"><i class="fab fa-google"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="ads-list-page">
+            <div class="ads-page-top-header">
+                <div class="ads-page-main-title">
+                    <h2>انتخاب نهایی بسته تبلیغاتی</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="ads-boxes-mainBox">
+                    <div class="final-ad-package-form">
+                        <form action="">
+                            <div class="package-head">
+                                <div class="package-title">
+                                    <p class="form-title">عنوان بسته:</p>
+                                    <h4>بسته یک ماهه طلایی دولتسرا</h4>
+                                </div>
+                                <div class="category-select">
+
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>دسته بندی</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="package-monthes">
+                                <div class="col-12 my-sm-4 my-3">
+                                    <div class="boldInputLabel text-center mb-3">
+                                        <p class="form-title">ماه مورد نظر برای تبلیغ:</p>
+                                    </div>
+                                    <div class="month-selection text-center">
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option1"
+                                            id="tempRadio-1">
+                                        <label class="radio--label half" for="tempRadio-1">
+                                           1400 فروردین
+                                        </label>
+
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option2"
+                                            id="tempRadio-2">
+                                        <label class="radio--label half" for="tempRadio-2">
+                                          1400  اردیبهشت
+                                        </label>
+
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option3"
+                                            id="tempRadio-3">
+                                        <label class="radio--label half" for="tempRadio-3">
+                                           1400 خرداد
+                                        </label>
+
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option4"
+                                            id="tempRadio-4">
+                                        <label class="radio--label half" for="tempRadio-4">
+                                          1400  تیر
+                                        </label>
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option5"
+                                            id="tempRadio-5">
+                                        <label class="radio--label half" for="tempRadio-5">
+
+                                          1400  مرداد
+                                        </label>
+
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option6"
+                                            id="tempRadio-6">
+                                        <label class="radio--label half" for="tempRadio-6">
+                                           1400 شهریور
+                                        </label>
+
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option7"
+                                            id="tempRadio-7">
+                                        <label class="radio--label half" for="tempRadio-7">
+                                          1400  مهر
+                                        </label>
+
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option8"
+                                            id="tempRadio-8">
+                                        <label class="radio--label half" for="tempRadio-8">
+                                          1400  آبان
+                                        </label>
+
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option9"
+                                            id="tempRadio-9">
+                                        <label class="radio--label half" for="tempRadio-9">
+                                          1400  آذر
+                                        </label>
+
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option10"
+                                            id="tempRadio-10">
+                                        <label class="radio--label half" for="tempRadio-10">
+                                          1400  دی
+                                        </label>
+
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option11"
+                                            id="tempRadio-11">
+                                        <label class="radio--label half" for="tempRadio-11">
+                                          1400  بهمن
+                                        </label>
+
+                                        <input class="radio--input half" type="radio" name="tempRadio" value="option12"
+                                            id="tempRadio-12">
+                                        <label class="radio--label half" for="tempRadio-12">
+                                          1400  اسفند
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="package-date my-4">
+                                <div class="start-date">
+                                    <p class="form-title">از تاریخ:</p>
+                                    <span>1400/04/04</span>
+                                </div>
+                                <div class="finish-date">
+                                    <p class="form-title">تا تاریخ :</p>
+                                    <span>1400/05/05</span>
+                                </div>
+                            </div>
+                            <div class="ad-upload-inputs my-sm-4 my-3">
+
+
+                                <div class="pic-upload">
+
+                                    <button class="file-upload-btn" type="button"
+                                        onclick="$('.file-upload-input').trigger( 'click' )">آپلود عکس</button>
+
+                                    <div class="image-upload-wrap">
+                                        <input class="file-upload-input" type='file' onchange="readURL(this);"
+                                            accept="image/*" />
+                                        <div class="drag-text px-2">
+                                            <h5>می‌توانید عکس مورد نظر را بکشید و در این قسمت رها کنید.</h5>
+                                        </div>
+                                    </div>
+                                    <div class="file-upload-content">
+                                        <img class="file-upload-image" src="#" alt="your image" />
+                                        <div class="image-title-wrap">
+                                            <button type="button" onclick="removeUpload()" class="remove-image">حذف
+                                                <span class="image-title">آپلود عکس</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="link-upload">
+                                    <p class="form-title">آپلود لینک:</p>
+
+                                    <input type="text" name="" id="" class="link-upload-input">
+                                </div>
+
+                            </div>
+                            <div class="package-form-submit">
+                                <button>ثبت و پرداخت</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+
+
+            <!-- Modal -->
+            <div class="modal modal-two fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="ad-pic zoomed">
+                        <img src="./assets/img/download (1).jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+    </main>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/image-input.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.mdb-select').materialSelect();
+        });
+    </script>
+</body>
+
+</html>

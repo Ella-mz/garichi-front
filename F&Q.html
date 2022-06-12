@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0cbb892daa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/F&Q.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="logo">
+                    <img src="./assets/img/logoDolatsara.svg" alt="logo">
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">اگهی ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">مشاوران</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" href="#">مشاوران</button>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      مجله خبری
+                    </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">آیتم اول</a></li>
+                                <li><a class="dropdown-item" href="#">آیتم دوم</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">آیتم متفاوت</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ثبت درخواست</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">مشاوران</a>
+                        </li>
+                    </ul>
+
+                    <!-- <div class="urgent">
+                        <a href="" >
+                            آگهی فوری
+                        </a>
+                    </div> -->
+                    <div class="phone">
+                        <a href="tel:021-8330568" title="phone">
+                            <span class="number">8330568</span>
+                            <span class="perfix">-021</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="profile">
+
+                    <div class="dashboard">
+                        <img src="./assets/img/user-alt-solid.png" alt="">
+                        <span>
+                        
+                        ثبت نام / ورود
+                    </span>
+                    </div>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"></a>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ورود / ثبت نام</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-navigation">
+                        <nav>
+                            <ul class="modal-tabs">
+                                <li><a data-bs-content="mobileLogin" href="#" class="selected">ورود با شماره موبایل</a></li>
+                                <li><a data-bs-content="usernsmeLogin" href="#">ورود با نام کاربری</a></li>
+                                <li><a data-bs-content="signup" href="#">ثبت نام</a></li>
+
+
+                            </ul>
+                        </nav>
+                        <div class="modal-tab-content">
+                            <div class="content selected" data-bs-content="mobileLogin">
+
+                                <div class="form">
+                                    <div class="title">
+                                        <h5>ورود با شماره موبایل</h5>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="mobile">
+                                            <span class="input-title">شماره موبایل</span>
+                                            <input type="text" placeholder="شماره موبایل خود را وارد کنید">
+                                        </div>
+                                        <div class="btnBox">
+                                            <button class="RecBtn red login">ورود</button>
+                                            <div class="tags">
+                                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                                <a href="#"><i class="fab fa-google"></i></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content" data-bs-content="usernsmeLogin">
+                                <div class="form">
+                                    <div class="title">
+                                        <h5>ورود با نام کاربری</h5>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="username">
+                                            <span class="input-title">نام کاربری</span>
+                                            <input type="text" placeholder="نام کاربری خود را وارد کنید">
+                                        </div>
+                                        <div class="password">
+                                            <span class="input-title">رمز عبور</span>
+                                            <input type="text" placeholder="رمز عبور خود را وارد کنید">
+                                        </div>
+                                        <div class="btnBox">
+                                            <button class="RecBtn red login">ورود</button>
+                                            <div class="tags">
+                                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                                <a href="#"><i class="fab fa-google"></i></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content" data-bs-content="signup">
+                                <div class="form">
+                                    <div class="title">
+                                        <h5>ثبت نام</h5>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="name">
+                                            <span class="input-title">نام و نام ‌خانوادگی</span>
+                                            <input type="text" placeholder="نام و نام خانوادگی خود را وارد کنید">
+                                        </div>
+                                        <div class="mobile">
+                                            <span class="input-title">شماره موبایل</span>
+                                            <input type="text" placeholder="شماره موبایل خود را وارد کنید">
+                                        </div>
+                                        <div class="username">
+                                            <span class="input-title">نام کاربری</span>
+                                            <input type="text" placeholder="نام کاربری خود را انتخاب کنید">
+                                        </div>
+                                        <div class="password">
+                                            <span class="input-title">رمز عبور</span>
+                                            <input type="text" placeholder="رمز عبور خود را انتخاب کنید">
+                                        </div>
+                                        <div class="password-confirm">
+                                            <span class="input-title">تکرار رمز عبور</span>
+                                            <input type="text" placeholder="رمز عبور خود را دوباره انتخاب کنید">
+                                        </div>
+
+                                        <div class="btnBox">
+                                            <button class="RecBtn red login">ثبت نام</button>
+                                            <div class="tags">
+                                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                                <a href="#"><i class="fab fa-google"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="qusetion-page">
+            <div class="qusetion-header">
+                <div class="qusetion-header-show">
+                    <div class="qusetion-header-title">
+                        <h2>
+                            پاسخ پرسش های پر تکرار
+                        </h2>
+                    </div>
+                    <div class="qusetion-header-search-box">
+                        <form action="">
+                            <input type="text" placeholder="پرسش خود راه جستجو کنید">
+                            <button>
+                                جستجو
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="qusetion-box">
+                    <div class="qusetion-box-show">
+                        <div class="qusetion-box-show-title">
+                            <h2>
+                                پاسخ پرسش های پر تکرار
+                            </h2>
+                        </div>
+                        <div class="qusetion-box-show-item">
+                            <div class="qusetion-box-show-item-box">
+                                <div class="accordion" id="accordionExample">
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          <h3>     چطور میتوانم مشخصات کاربری و ایمیل خود را ویرایش کنم؟</h3> 
+                                        </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                در وب سایت روی گزینه "ثبت نام" کلیک کنید. میتوانید با استفاده از شماره موبایل ثبت نام خود را انجام دهید. (کد فعال سازی برایتان پیامک میشود .) بعد از وارد نمودن کد فعالسازی ، ثبت نام انجام می شود. سپس روی گزینه تکمیل اطلاعات کلیک و اطلاعات خود را تکمیل
+                                                نمایید.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                             <h3>  چطور میتوانم مشخصات کاربری و ایمیل خود را ویرایش کنم؟</h3> 
+                                        </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                در وب سایت روی گزینه "ثبت نام" کلیک کنید. میتوانید با استفاده از شماره موبایل ثبت نام خود را انجام دهید. (کد فعال سازی برایتان پیامک میشود .) بعد از وارد نمودن کد فعالسازی ، ثبت نام انجام می شود. سپس روی گزینه تکمیل اطلاعات کلیک و اطلاعات خود را تکمیل
+                                                نمایید.
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                               <h3> چطور میتوانم مشخصات کاربری و ایمیل خود را ویرایش کنم؟
+                                        </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                در وب سایت روی گزینه "ثبت نام" کلیک کنید. میتوانید با استفاده از شماره موبایل ثبت نام خود را انجام دهید. (کد فعال سازی برایتان پیامک میشود .) بعد از وارد نمودن کد فعالسازی ، ثبت نام انجام می شود. سپس روی گزینه تکمیل اطلاعات کلیک و اطلاعات خود را تکمیل
+                                                نمایید.
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.js"></script>
+</body>
+
+</html>
