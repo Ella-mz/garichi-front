@@ -1,0 +1,213 @@
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/IRANSansX-Bold.woff") format("woff"),
+    url("../fonts/IRANSansX-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/IRANSansX-Regular.woff") format("woff"),
+    url("../fonts/IRANSansX-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/IRANSansXFaNum-Regular.woff") format("woff"),
+    url("../fonts/IRANSansXFaNum-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/IRANSansXFaNum-Bold.woff") format("woff"),
+    url("../fonts/IRANSansXFaNum-Bold.woff2") format("woff2");
+}
+/* icons */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?wr4o8p#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?wr4o8p") format("truetype"),
+    url("../fonts/icomoon.woff?wr4o8p") format("woff"),
+    url("../fonts/icomoon.svg?wr4o8p#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-cart:before {
+  content: "\e902";
+}
+.icon-book:before {
+  content: "\e91f";
+}
+.icon-stopwatch:before {
+  content: "\e952";
+}
+.icon-reply1:before {
+  content: "\e96a";
+}
+.icon-user-tie:before {
+  content: "\e976";
+}
+.icon-target:before {
+  content: "\e9b3";
+}
+.icon-sphere:before {
+  content: "\e9c9";
+}
+.icon-eye1:before {
+  content: "\e9ce";
+}
+.icon-bookmarks:before {
+  content: "\e9d3";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-document-certificate:before {
+  content: "\e901";
+}
+.icon-menu:before {
+  content: "\e905";
+}
+.icon-envelope1:before {
+  content: "\e904";
+}
+.icon-user:before {
+  content: "\e903";
+}
+.icon-user1:before {
+  content: "\e900";
+}
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-star:before {
+  content: "\f005";
+}
+.icon-star-o:before {
+  content: "\f006";
+}
+.icon-th-large:before {
+  content: "\f009";
+}
+.icon-check:before {
+  content: "\f00c";
+}
+.icon-play-circle-o:before {
+  content: "\f01d";
+}
+.icon-edit:before {
+  content: "\f044";
+}
+.icon-pencil-square-o:before {
+  content: "\f044";
+}
+.icon-check-square-o:before {
+  content: "\f046";
+}
+.icon-arrow-left:before {
+  content: "\f060";
+}
+.icon-mail-forward:before {
+  content: "\f064";
+}
+.icon-share:before {
+  content: "\f064";
+}
+.icon-eye:before {
+  content: "\f06e";
+}
+.icon-shopping-cart:before {
+  content: "\f07a";
+}
+.icon-facebook-square:before {
+  content: "\f082";
+}
+.icon-thumbs-o-up:before {
+  content: "\f087";
+}
+.icon-thumbs-o-down:before {
+  content: "\f088";
+}
+.icon-sign-out:before {
+  content: "\f08b";
+}
+.icon-thumb-tack:before {
+  content: "\f08d";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-square-o:before {
+  content: "\f096";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-dashboard:before {
+  content: "\f0e4";
+}
+.icon-tachometer:before {
+  content: "\f0e4";
+}
+.icon-angle-left:before {
+  content: "\f104";
+}
+.icon-mail-reply:before {
+  content: "\f112";
+}
+.icon-reply:before {
+  content: "\f112";
+}
+.icon-caret-square-o-right:before {
+  content: "\f152";
+}
+.icon-toggle-right:before {
+  content: "\f152";
+}
+.icon-envelope-square:before {
+  content: "\f199";
+}
+.icon-graduation-cap:before {
+  content: "\f19d";
+}
+.icon-mortar-board:before {
+  content: "\f19d";
+}
+.icon--send-o:before {
+  content: "\f1d9";
+}
+.icon-line-chart:before {
+  content: "\f201";
+}
+.icon-volume-control-phone:before {
+  content: "\f2a0";
+}
