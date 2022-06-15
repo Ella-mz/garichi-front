@@ -196,6 +196,7 @@ section.login {
     background: #ffd200;
     padding-top: 50px;
     margin-top: 40px;
+	height:100vh
 }
 
 .bg-login-page-mobile {
@@ -234,7 +235,7 @@ section.login {
         /* display: block; */
     }
     .content-login-page {
-        margin-top: 50px;
+        margin-top: 140px;
     }
 }
 
