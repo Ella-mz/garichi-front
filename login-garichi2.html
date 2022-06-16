@@ -38,6 +38,11 @@ color: rgb(61, 61, 218);
     /* border-bottom: 2px solid rgb(61, 61, 218); */
     font-weight: 700;	
 }
+.show-login-navigationTab .tabs2 li.selected{
+color: rgb(61, 61, 218);
+    /* border-bottom: 2px solid rgb(61, 61, 218); */
+    font-weight: 700;	
+}
 
  .show-login-navigationTab {
     margin-top: 30px;
@@ -60,6 +65,14 @@ color: rgb(61, 61, 218);
 .tabcontent.selected {
   display: block;
 }
+
+.tabcontent2 {
+  display: none;
+}
+
+.tabcontent2.selected {
+  display: block;
+}
 	</style>
 </head>
 
@@ -78,7 +91,7 @@ color: rgb(61, 61, 218);
 						
                             <div class="login-form-box-item ">
 							
-                                <div class="login-form-box-item-show ">
+                                <div class="login-form-box-item-show tabContent">
                                      <div class="bg-login-page-mobile ">
             <img src="src/images/logo-fa.jpeg" alt=" ">
         </div>
@@ -194,9 +207,9 @@ color: rgb(61, 61, 218);
             </div>
 			</section>
         <section class=" login-mobile ">
-            <div class="bg-login-page-mobile ">
+            <!--  <div class="bg-login-page-mobile ">
                 <img src="src/images/logo-fa.jpeg" alt=" ">
-            </div>
+            </div>-->
         <!--   <div class="bg-login-page-mobile ">
 <div class="login-form-box-item-input" style="background:white;border:1px solid rgba(0, 0, 0, 0.219)">
                                         
@@ -218,139 +231,108 @@ color: rgb(61, 61, 218);
                           
 									<div class="login-form-box-item ">
 							
-                                <div class="login-form-box-item-show ">
-								
-                                <!--    <div class="login-form-box-item-header ">
-                                        <p>
-                                            ورود و عضویت با کلمه عبور
-                                        </p>
-                                    </div>-->
+                                <div class="login-form-box-item-show tabContent2">
+                                     <div class="bg-login-page-mobile ">
+            <img src="src/images/logo-fa.jpeg" alt=" ">
+        </div>
+		 <div class="show-login-navigationTab">
+                                    <nav>
+                                        <ul class="tabs2">
+                                            <li data-content="signup-form2" class=" selected"> ثبت نام  <span
+                                                        style="color: rgba(0, 0, 0, 0.726)">|</span>
+                                            </li>
+                                            <li data-content="loginOTP-form2" class="">ورود با پیامک <span
+                                                        style="color: rgba(0, 0, 0, 0.726)">|</span>
+                                            </li>
+                                            <li data-content="login-form2" class="">ورود با رمز ثابت
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="tabcontent2 selected" data-content="signup-form2">
+									<div class="login-form-box-item-show">
+                                   
                                     <div class="login-form-box-item-input ">
-                                        <input type="text " placeholder="نام و عنوان کسب و کار (برند)" class="mb-2 ">
-                                    </div>
-                                    <div class="login-form-box-item-input "  style="flex-direction: unset;">
-                                        <select class="registerselectbox" name="category" style="width: 115px;margin-left:8px">
-                                                        <option value="" disabled selected> صنف*</option>
-                                                       
-                                                            <option value=""
-                                                                    >1</option>
-                                                         <option value=""
-                                                                    >1</option>
-																	 <option value=""
-                                                                    >1</option>
-																	 <option value=""
-                                                                    >1</option>
-                                                    </select>
-													 <select class="registerselectbox select2" multiple="multiple" name="category" style="width: 262px">
-                                                        <option value="" disabled selected> صنف*</option>
-                                                       
-                                                            <option value=""
-                                                                    >1</option>
-                                                         <option value=""
-                                                                    >1</option>
-																	 <option value=""
-                                                                    >1</option>
-																	 <option value=""
-                                                                    >1</option>
-                                                    </select> 
-                                    </div>
-										 <div class="login-form-box-item-input d-flex" style="flex-direction: unset;">
-                                                    <select class="registerselectbox" name="category" style="width: 188px;margin-left:9px">
-                                                        <option value="" disabled selected> شهر*</option>
-                                                       
-                                                            <option value=""
-                                                                    >1</option>
-                                                         <option value=""
-                                                                    >1</option>
-																	 <option value=""
-                                                                    >1</option>
-																	 <option value=""
-                                                                    >1</option>
-                                                    </select>
-													<select class="registerselectbox" name="category" style="width: 188px">
-                                                        <option value="" disabled selected> محله*</option>
-                                                       
-                                                            <option value=""
-                                                                    >1</option>
-                                                         <option value=""
-                                                                    >1</option>
-																	 <option value=""
-                                                                    >1</option>
-																	 <option value=""
-                                                                    >1</option>
-                                                    </select><br>
-                                                   
-                                                </div>
-												<div class="login-form-box-item-input" style="flex-direction: unset;">
                                         
-                                        <input type="text " placeholder="نام مدیر کسب و کار" style="margin-left:8px;width:123px">
-										<input type="text " placeholder="نام خانوادگی" style="margin-left:8px;width:123px">
-										<input type="text " placeholder="کدملی" style="width:123px">
+                                        <input type="text " placeholder="شماره موبایل">
                                     </div>
 									
-										 <div class="login-form-box-item-header mt-5" style="text-align:start">
-                                        <p>
-                                            آدرس صفحه اختصاصی شما در گاریچی
-                                        </p>
+									 <div class="login-form-box-item-input d-flex" style="flex-direction: unset;">
+                                        
+                                        <input type="text " placeholder="رمز عبور" style="width: 188px;margin-left:8px">
+                                    <input type="text " placeholder="تکرار رمز عبور" style="width: 188px;margin-left:8px">
+									</div>
+									 <div class="login-form-box-item-input ">
+                                        
+                                        <input type="text " placeholder="اگر معرف دارید، کد معرف را وارد کنید">
                                     </div>
-									<div class="login-form-box-item-input" style="flex-direction: unset;">
-								
-                                       
-                                        <input type="text " placeholder="حساب کاربری (ID)" style="width:250px">
-										
-						<button class="btn btn-success" style="width:123px;font-size:15px; border-radius:4px 0px 0px 4px">
-                                        تایید حساب کاربری
+										</div>		
+									<p class="mt-2">
+										ثبت نام به منزله پذیرش قوانین و مقررات است.</p>
+                                    <div class="login-form-box-item-btn ">
+                                        <button class="btn btn-success" style="padding: 8px 38px">
+                                        ارسال 
                                         </button>
+										
+									
                                     </div>
-									 <div class="login-form-box-item-header mt-3">
-                                        <p>
-                                           تبریک، صفحه اختصاصی کسب و کار شما در گاریچی آزاد است
-                                        </p>
+								</div>
+                               
+                                <div class="tabcontent2" data-content="loginOTP-form2">
+									<div class="login-form-box-item-show">
+                                   
+                                    <div class="login-form-box-item-input ">
+                                        
+                                        <input type="text " placeholder="شماره موبایل">
+                                    </div>
+									
+									 <div class="login-form-box-item-input d-flex" style="flex-direction: unset;">
+                                        
+                                        <input type="text " placeholder="رمز عبور" style="width: 188px;margin-left:8px">
+                                    <input type="text " placeholder="تکرار رمز عبور" style="width: 188px;margin-left:8px">
+									</div>
+									
+										</div>		
+									<p class="mt-2">
+										ثبت نام به منزله پذیرش قوانین و مقررات است.</p>
+                                    <div class="login-form-box-item-btn ">
+                                        <button class="btn btn-success" style="padding: 8px 38px">
+                                        ارسال 
+                                        </button>
+										
+									
+                                    </div>
+								</div>
+								
+								 <div class="tabcontent2" data-content="login-form2">
+									<div class="login-form-box-item-show">
+                                   
+                                    <div class="login-form-box-item-input ">
+                                        
+                                        <input type="text " placeholder="شماره موبایل">
+                                    </div>
+									
+									 <div class="login-form-box-item-input">
+                                        
+                                        <input type="text " placeholder="رمز عبور">
                                     
 									</div>
-									<div class="login-form-box-item-input" style="flex-direction: unset;">
-								
-                                       
-                                        <input type="text " placeholder="حساب کاربری (ID)" style="margin-left:8px;width:250px">
+									
+										</div>		
+									<p class="mt-2">
+										ثبت نام به منزله پذیرش قوانین و مقررات است.</p>
+                                    <div class="login-form-box-item-btn ">
+                                        <button class="btn btn-success" style="padding: 8px 38px">
+                                        ارسال 
+                                        </button>
 										
-						<button class="btn btn-success" style="width:123px">
-                                        کپی
-                                        </button>
+									
                                     </div>
-												
-                                    <div class="login-form-box-item-btn ">
-                                        <button class="btn btn-danger">
-                                        ثبت نهایی
-                                        </button>
-                                    </div>
-                                </div>
-
+								</div>
+							  </div>
                             </div>
                         </div>
-                   <!--     <div class="bg-login-form-box blue-shade p-2 ">
-                            <div class="login-form-box-item ">
-                                <div class="login-form-box-item-show ">
-                                    <div class="login-form-box-item-header ">
-                                        <p>
-                                            ورود و عضویت با کلمه عبور
-                                        </p>
-                                    </div>
-                                    <div class="login-form-box-item-input ">
-                                        <input type="text " placeholder=" نام کاربری ">
-                                    </div>
-                                    <div class="login-form-box-item-input ">
-                                        <input type="text " placeholder=" کلمه عبور ">
-                                    </div>
-                                    <div class="login-form-box-item-btn ">
-                                        <button class="blue-btn ">
-                                        ادامه
-                                        </button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-              -->
+                 
 			  </div>
                 </div>
 
@@ -385,20 +367,48 @@ let items = document.querySelectorAll('.tabs li ');
 items.forEach((item) => {
     item.addEventListener('click', function (e) {
         e.preventDefault();
-		
-
-        document.querySelector('.tabs li.selected').classList.remove('selected');
-        this.classList.add('selected');
 
         let dataBox = this.getAttribute('data-content')
-console.log(dataBox);
-		console.log(document.querySelector('.tabContent'));
-        document.querySelector('.tabContent div.selected').classList.remove('selected')
-		alert('s');
-        document.querySelector(`.tabContent div[data-content="${dataBox}"]`).classList.add('selected')
-    })
+		
+		if(dataBox==='login-form' || dataBox==='loginOTP-form' || dataBox==='signup-form'){
+			 document.querySelector('.tabs li.selected').classList.remove('selected');
+			 this.classList.add('selected');
+			 document.querySelector('.tabContent div.selected').classList.remove('selected')
+			 document.querySelector(`.tabContent div[data-content="${dataBox}"]`).classList.add('selected')
+			
+		}
+		if(dataBox==='login-form2' || dataBox==='loginOTP-form2' || dataBox==='signup-form2'){
+			document.querySelector('.tabs2 li.selected').classList.remove('selected');
+			this.classList.add('selected');
+			document.querySelector('.tabContent2 div.selected').classList.remove('selected')
+			document.querySelector(`.tabContent2 div[data-content="${dataBox}"]`).classList.add('selected')
+		  }
+		})
 })
-// single  contractor Page tabnavigatiion
+
+let items2 = document.querySelectorAll('.tabs2 li ');
+items2.forEach((item2) => {
+    item2.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        let dataBox = this.getAttribute('data-content')
+		
+		if(dataBox==='login-form' || dataBox==='loginOTP-form' || dataBox==='signup-form'){
+			 document.querySelector('.tabs li.selected').classList.remove('selected');
+			 this.classList.add('selected');
+			 document.querySelector('.tabContent div.selected').classList.remove('selected')
+			 document.querySelector(`.tabContent div[data-content="${dataBox}"]`).classList.add('selected')
+			
+		}
+		if(dataBox==='login-form2' || dataBox==='loginOTP-form2' || dataBox==='signup-form2'){
+			document.querySelector('.tabs2 li.selected').classList.remove('selected');
+			this.classList.add('selected');
+			document.querySelector('.tabContent2 div.selected').classList.remove('selected')
+			document.querySelector(`.tabContent2 div[data-content="${dataBox}"]`).classList.add('selected')
+		  }
+		})
+})
+
 
 </script>
 
