@@ -11,6 +11,125 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/membershipshow.css">
     <title>membership</title>
+	<style>
+
+        .card {
+            margin: 40px 0px;
+            padding: 40px 50px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .card label{
+                float: right;
+                display: block;
+            margin-right: unset;
+            color: unset;
+            margin-top: unset;
+        }
+        input, textarea {
+            background-color: #F3E5F5;
+            padding: 8px 15px 8px 15px;
+            width: 100%;
+            border-radius: 5px !important;
+            box-sizing: border-box;
+            border: 1px solid #F3E5F5;
+            font-size: 15px !important;
+            color: #000 !important;
+            font-weight: 300;
+        }
+
+        input:focus, textarea:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #9FA8DA;
+            outline-width: 0;
+            font-weight: 400;
+        }
+
+        button:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            outline-width: 0;
+        }
+
+        .gray {
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            filter: grayscale(100%);
+            color: #E0E0E0;
+        }
+
+        .gray .pay {
+            box-shadow: none;
+        }
+
+        #tax {
+            border-top: 1px lightgray solid;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+
+        .btn-blue {
+            border: none;
+            border-radius: 10px;
+            background-color: #ffd200;
+            color: #000;
+            padding: 8px 38px;
+            margin: 20px 0px;
+            cursor: pointer;
+        }
+
+        .btn-blue:hover {
+            background-color: #ffff58;
+            color: #000;
+        }
+
+        #checkout {
+            float: left;
+        }
+
+        #check-amt {
+            float: right;
+        }
+
+        @media screen and (max-width: 768px) {
+            .book, .book-img {
+                width: 100px;
+                height: 150px;
+            }
+
+            .card {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .mob-text {
+                font-size: 13px;
+            }
+
+            .pad-left {
+                padding-left: 20px;
+            }
+        }
+		.btn-membership{
+		background-color: #ffff58;
+    padding: 8px 15px 8px 15px;
+    width: 100%;
+    border-radius: 5px !important;
+    box-sizing: border-box;
+    border: 1px solid #ffff58;
+    font-size: 15px !important;
+    color: #000 !important;
+    font-weight: 300;
+		}
+
+    </style>
 </head>
 
 <body>
@@ -19,168 +138,235 @@
     <main>
         <section class="OpportunitiesPacakges">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 my-5">
+			  <div class="row ">
+			   <div class="col-12 my-5">
                         <div class="title">
                             <h1><strong>خرید حق عضویت</strong></h1>
                             <p>با انتخاب هر یک از بسته های زیر می توانید تعداد خاصی از تبلیغات را در قسمت فرصت های برتر نشان دهید تا افراد بیشتری آنها را ببینند و درخواست کنند.</p>
                         </div>
                     </div>
-                    <div class="col-12 my-5 px-5">
-                        <div class="row px-xl-5 px-md-1 px-xs-5">
-                            <div class="col-lg-4 col-md-6 px-lg-4 px-md-1 px-xs-5 mb-5 mt-4">
-                                <div class="packageBox">
-                                    <div class="imageBox">
-                                        <img src="assets/img/package.png" alt="">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-6">
+								   <h2>بسته تست طلا</h2>
+                                    <div class="row px-2">
+                                        <div class="form-group col-md-6">
+                                            <label class="form-control-label">میزان امتیاز</label>
+                                            <button class="btn-membership">1500
+                                            </button>
+                                        </div>
+                                       <div class="form-group col-md-6">
+                                            <label class="form-control-label">قیمت بسته</label>
+                                            <button class="btn-membership">700,000 تومان
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="packagesTitle">
-                                        <h5><strong>بسته طلایی</strong></h5>
-                                    </div>
-                                    <div class="packageDetail">
-                                        <ul class="titles">
-                                            <li>تعداد تبلیغات :</li>
-                                            <li>زمان بسته :</li>
-                                            <li>قیمت بسته :</li>
-                                        </ul>
-                                        <ul class="detailInfos">
-                                            <li><span>10</span></li>
-                                            <li><span>15 روز</span></li>
-                                            <li><span>18000تومان</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="buyingBtn">
-                                        <button class="RecBtn potato-bg">خرید بسته</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 px-lg-4 px-md-1 px-xs-5 mb-5 mt-4">
-                                <div class="packageBox">
-                                    <div class="imageBox">
-                                        <img src="assets/img/package-silver.png" alt="">
-                                    </div>
-                                    <div class="packagesTitle">
-                                        <h5><strong>بسته نقره ای</strong></h5>
-                                    </div>
-                                    <div class="packageDetail">
-                                        <ul class="titles">
-                                            <li>تعداد تبلیغات :</li>
-                                            <li>زمان بسته :</li>
-                                            <li>قیمت بسته :</li>
-                                        </ul>
-                                        <ul class="detailInfos">
-                                            <li><span>5</span></li>
-                                            <li><span>7 روز</span></li>
-                                            <li><span>11000تومان</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="buyingBtn">
-                                        <button class="RecBtn potato-bg">خرید بسته</button>
+                                    <div class="row px-2">
+                                       
+										<div class="form-group col-md-12">
+                                            <label class="form-control-label">مدت اعتبار حق اشتراک</label>
+                                           <button class="btn-membership">60 روز
+                                            </button>
+                                        </div>
+                                       
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 px-lg-4 px-md-1 px-xs-5 mb-5 mt-4">
-                                <div class="packageBox">
-                                    <div class="imageBox">
-                                        <img src="assets/img/package-white.png" alt="">
-                                    </div>
-                                    <div class="packagesTitle">
-                                        <h5><strong>بسته سفید</strong></h5>
-                                    </div>
-                                    <div class="packageDetail">
-                                        <ul class="titles">
-                                            <li>تعداد تبلیغات :</li>
-                                            <li>زمان بساه :</li>
-                                            <li>قیمت بسته :</li>
-                                        </ul>
-                                        <ul class="detailInfos">
-                                            <li><span>3</span></li>
-                                            <li><span>1 روز</span></li>
-                                            <li><span>2000تومان</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="buyingBtn">
-                                        <button class="RecBtn potato-bg">خرید بسته</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 px-lg-4 px-md-1 px-xs-5 mb-5 mt-4">
-                                <div class="packageBox">
-                                    <div class="imageBox">
-                                        <img src="assets/img/package-white.png" alt="">
-                                    </div>
-                                    <div class="packagesTitle">
-                                        <h5><strong>بسته معمولی</strong></h5>
-                                    </div>
-                                    <div class="packageDetail">
-                                        <ul class="titles">
-                                            <li>تعداد تبلیغات :</li>
-                                            <li>زمان بسته :</li>
-                                            <li>قیمت بسته :</li>
-                                        </ul>
-                                        <ul class="detailInfos">
-                                            <li><span>4</span></li>
-                                            <li><span>3 روز</span></li>
-                                            <li><span>5000تومان</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="buyingBtn">
-                                        <button class="RecBtn potato-bg">خرید بسته</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 px-lg-4 px-md-1 px-xs-5 mb-5 mt-4">
-                                <div class="packageBox">
-                                    <div class="imageBox">
-                                        <img src="assets/img/package-white.png" alt="">
-                                    </div>
-                                    <div class="packagesTitle">
-                                        <h5><strong>بسته هفته ای</strong></h5>
-                                    </div>
-                                    <div class="packageDetail">
-                                        <ul class="titles">
-                                            <li>تعداد تبلیغات :</li>
-                                            <li>زمان بسته :</li>
-                                            <li>قیمت بسته :</li>
-                                        </ul>
-                                        <ul class="detailInfos">
-                                            <li><span>4</span></li>
-                                            <li><span>3 روز</span></li>
-                                            <li><span>5000تومان</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="buyingBtn">
-                                        <button class="RecBtn potato-bg">خرید بسته</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 px-lg-4 px-md-1 px-xs-5 mb-5 mt-4">
-                                <div class="packageBox">
-                                    <div class="imageBox">
-                                        <img src="assets/img/package-white.png" alt="">
-                                    </div>
-                                    <div class="packagesTitle">
-                                        <h5><strong>بسته ماهانه</strong></h5>
-                                    </div>
-                                    <div class="packageDetail">
-                                        <ul class="titles">
-                                            <li>تعداد تبلیغات :</li>
-                                            <li>زمان بسته :</li>
-                                            <li>قیمت بسته :</li>
-                                        </ul>
-                                        <ul class="detailInfos">
-                                            <li><span>4</span></li>
-                                            <li><span>3 روز</span></li>
-                                            <li><span>500تومان</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="buyingBtn">
-                                        <button class="RecBtn potato-bg">خرید بسته</button>
-                                    </div>
-                                </div>
-                            </div>
+                         <div class="col-lg-6 mt-2">
+                        <div class="row d-flex justify-content-center px-4">
+                           با خرید این بسته می توانید انواع آگهی ها را درج کنید: - آگهی عادی به تعداد نامحدود -آگهی نردبانی -آگهی فوری و همچنین می توانید درخواست های خرید مشتریان در حوزه فعالیت خود و دیگران را ببینید.
+
+                        </div>
+						<div class="d-flex justify-content-center align-items-center">
+                        <button class="btn-block btn-blue">
+                            <span>
+                                <span id="checkout">خرید بسته</span>
+                            </span>
+                        </button>
+                  </div>
+                              </div>       
+								   </div>
                         </div>
                     </div>
-                </div>
+                
+				     <div class="col-lg-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-6">
+								   <h2>بسته تست طلا</h2>
+                                    <div class="row px-2">
+                                        <div class="form-group col-md-6">
+                                            <label class="form-control-label">میزان امتیاز</label>
+                                            <button class="btn-membership">1500
+                                            </button>
+                                        </div>
+                                       <div class="form-group col-md-6">
+                                            <label class="form-control-label">قیمت بسته</label>
+                                            <button class="btn-membership">700,000 تومان
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row px-2">
+                                       
+										<div class="form-group col-md-12">
+                                            <label class="form-control-label">مدت اعتبار حق اشتراک</label>
+                                           <button class="btn-membership">60 روز
+                                            </button>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                         <div class="col-lg-6 mt-2">
+                        <div class="row d-flex justify-content-center px-4">
+                           با خرید این بسته می توانید انواع آگهی ها را درج کنید: - آگهی عادی به تعداد نامحدود -آگهی نردبانی -آگهی فوری و همچنین می توانید درخواست های خرید مشتریان در حوزه فعالیت خود و دیگران را ببینید.
+
+                        </div>
+						<div class="d-flex justify-content-center align-items-center">
+                        <button class="btn-block btn-blue">
+                            <span>
+                                <span id="checkout">خرید بسته</span>
+                            </span>
+                        </button>
+                  </div>
+                              </div>       
+								   </div>
+                        </div>
+                    </div>
+                
+				     <div class="col-lg-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-6">
+								   <h2>بسته تست طلا</h2>
+                                    <div class="row px-2">
+                                        <div class="form-group col-md-6">
+                                            <label class="form-control-label">میزان امتیاز</label>
+                                            <button class="btn-membership">1500
+                                            </button>
+                                        </div>
+                                       <div class="form-group col-md-6">
+                                            <label class="form-control-label">قیمت بسته</label>
+                                            <button class="btn-membership">700,000 تومان
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row px-2">
+                                       
+										<div class="form-group col-md-12">
+                                            <label class="form-control-label">مدت اعتبار حق اشتراک</label>
+                                           <button class="btn-membership">60 روز
+                                            </button>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                         <div class="col-lg-6 mt-2">
+                        <div class="row d-flex justify-content-center px-4">
+                           با خرید این بسته می توانید انواع آگهی ها را درج کنید: - آگهی عادی به تعداد نامحدود -آگهی نردبانی -آگهی فوری و همچنین می توانید درخواست های خرید مشتریان در حوزه فعالیت خود و دیگران را ببینید.
+
+                        </div>
+						<div class="d-flex justify-content-center align-items-center">
+                        <button class="btn-block btn-blue">
+                            <span>
+                                <span id="checkout">خرید بسته</span>
+                            </span>
+                        </button>
+                  </div>
+                              </div>       
+								   </div>
+                        </div>
+                    </div>
+                
+				     <div class="col-lg-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-6">
+								   <h2>بسته تست طلا</h2>
+                                    <div class="row px-2">
+                                        <div class="form-group col-md-6">
+                                            <label class="form-control-label">میزان امتیاز</label>
+                                            <button class="btn-membership">1500
+                                            </button>
+                                        </div>
+                                       <div class="form-group col-md-6">
+                                            <label class="form-control-label">قیمت بسته</label>
+                                            <button class="btn-membership">700,000 تومان
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row px-2">
+                                       
+										<div class="form-group col-md-12">
+                                            <label class="form-control-label">مدت اعتبار حق اشتراک</label>
+                                           <button class="btn-membership">60 روز
+                                            </button>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                         <div class="col-lg-6 mt-2">
+                        <div class="row d-flex justify-content-center px-4">
+                           با خرید این بسته می توانید انواع آگهی ها را درج کنید: - آگهی عادی به تعداد نامحدود -آگهی نردبانی -آگهی فوری و همچنین می توانید درخواست های خرید مشتریان در حوزه فعالیت خود و دیگران را ببینید.
+
+                        </div>
+						<div class="d-flex justify-content-center align-items-center">
+                        <button class="btn-block btn-blue">
+                            <span>
+                                <span id="checkout">خرید بسته</span>
+                            </span>
+                        </button>
+                  </div>
+                              </div>       
+								   </div>
+                        </div>
+                    </div>
+                
+				     <div class="col-lg-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-6">
+								   <h2>بسته تست طلا</h2>
+                                    <div class="row px-2">
+                                        <div class="form-group col-md-6">
+                                            <label class="form-control-label">میزان امتیاز</label>
+                                            <button class="btn-membership">1500
+                                            </button>
+                                        </div>
+                                       <div class="form-group col-md-6">
+                                            <label class="form-control-label">قیمت بسته</label>
+                                            <button class="btn-membership">700,000 تومان
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row px-2">
+                                       
+										<div class="form-group col-md-12">
+                                            <label class="form-control-label">مدت اعتبار حق اشتراک</label>
+                                           <button class="btn-membership">60 روز
+                                            </button>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                         <div class="col-lg-6 mt-2">
+                        <div class="row d-flex justify-content-center px-4">
+                           با خرید این بسته می توانید انواع آگهی ها را درج کنید: - آگهی عادی به تعداد نامحدود -آگهی نردبانی -آگهی فوری و همچنین می توانید درخواست های خرید مشتریان در حوزه فعالیت خود و دیگران را ببینید.
+
+                        </div>
+						<div class="d-flex justify-content-center align-items-center">
+                        <button class="btn-block btn-blue">
+                            <span>
+                                <span id="checkout">خرید بسته</span>
+                            </span>
+                        </button>
+                  </div>
+                              </div>       
+								   </div>
+                        </div>
+                    </div>
+                
+				  
+               
             </div>
         </section>
     </main>
