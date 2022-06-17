@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,18 +26,19 @@
 }
 
 .show-store {
-    padding: 10px 10px 5px 10px;
+   /* padding: 10px 10px 5px 10px;*/
     box-shadow: 2px 3px 7px 3px rgb(204 204 204);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    background: #f1f1f1;
+   
+		background-color:#ffd200
 }
 
 .store-img {
-    height: 135px;
+    /*height: 135px;*/
     position: relative;
     overflow: hidden;
     object-fit: cover;
@@ -54,8 +55,7 @@
 }
 
 .store-desc {
-    background: rgba(255, 255, 255, 0.835);
-    padding: 8px 10px 12px 10px;
+   
     position: relative;
     top: -2px;
     border-radius: 5px;
@@ -123,7 +123,7 @@
 
 @media(max-width:1200px) {
     .all-contractor-header-left div {
-        margin-top: 14px;
+       /* margin-top: 14px;*/
     }
 }
 
@@ -150,6 +150,7 @@
         margin-top: 12px;
     }
 }
+
 
 @media(max-width:430px) {
     .store {
