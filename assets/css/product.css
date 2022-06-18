@@ -500,7 +500,7 @@ input[type="checkbox"]:checked ~ .toggle {
 }
 
 input[type="checkbox"]:checked ~ .switch {
-    background: #471d57;
+    background: #4c4949;
     transition: 0.5s;
     color: #797979;
     cursor: pointer;
@@ -565,7 +565,7 @@ input[type="checkbox"]:checked ~ .switch {
 }
 
 #switch2:checked ~ .switch {
-    background: #402fb7;
+    background: #4c4949;
 }
 
 .centered {
@@ -1559,7 +1559,7 @@ li
 .resent-product .resent-product-title {
     text-align: right;
     margin-bottom: 70px;
-    color: #471d57;
+    color: #4c4949;
 }
 
 
@@ -1861,7 +1861,7 @@ li
     font-size: 10px;
 }
 .request-card .request-info-title {
-    color: rgb(61, 61, 218);
+    color: #4c4949;
     font-size: 14px;
     font-weight: bold;
     margin-left: 35px;
@@ -1872,9 +1872,9 @@ li
 }
 .request-card .accordion-item .accordion-button {
     justify-content: center;
-    background-color: #dcdcf5;
+    background-color: #ffff58;
     font-size: 16px;
-    color: rgb(61, 61, 218);
+    color: #4c4949;
 }
 .request-card .accordion-item .accordion-button::after {
     margin-right: 4px;
@@ -1909,7 +1909,7 @@ li
 .request-card .contact-call-info button {
     border-radius: 8px;
     border: none;
-    background-color: rgb(61, 61, 218);
+    background-color: #4c4949;
     color: #fff;
     font-weight: bold;
     padding: 6px 16px;

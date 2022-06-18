@@ -969,7 +969,9 @@ footer .footer-bottom-part .social-medias ul li {
     align-items: center;
     justify-content: center;
     border-radius: 3px;
-    position: relative;
+    position: relative;   
+	
+
 }
 
 footer .footer-bottom-part .social-medias ul li i {
@@ -1281,10 +1283,11 @@ border-right: 7px solid #4c4949;
     justify-content: center;
     border-radius: 3px;
     position: relative;
+	margin-left:17px
 }
 
 .footer-bottom-part .social-medias ul li i {
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .footer-bottom-part .social-medias ul li a {
@@ -1851,7 +1854,7 @@ border-right: 7px solid #4c4949;
 }
 
 .main-header .navbar .top-menu-items .navbar-brand {
-  width: 64px;
+  width: 100px;
   height: 72px;
   object-fit: contain;
   overflow: hidden;
