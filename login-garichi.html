@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="src/css/font.css">
     <link rel="stylesheet" href="src/css/login.css">
-	
+	<!-- Link fontawesome CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="src/css/all.min.css" rel="stylesheet" />
+ 
     <title>login</title>
 	<style>
    .bg-login-page{ flex-basis: 60%;
@@ -20,6 +23,19 @@
     background: url(src/images/login1.jpeg);
     background-position: center;
     background-size: cover;
+	}
+	.copy-input{
+	margin-left:8px
+	;width:250px;
+	background-color:#555;
+	}
+	#copyText2::placeholder{
+	color:white;
+	
+	}
+	#copyText::placeholder{
+	color:white;
+	
 	}
 	</style>
 </head>
@@ -152,14 +168,14 @@
                                         </p>
                                     
 									</div>
-									<div class="login-form-box-item-input" style="flex-direction: unset;">
-								
-                                       
-                                        <input type="text " placeholder="حساب کاربری (ID)" style="margin-left:8px;width:250px">
+									<div class="login-form-box-item-input" style="flex-direction: unset;display:flex;align-items:center;justify-content:center">
+									<a onclick="copyText2()" style="width:80px;background-color:blue;color:#fff;display: flex; height:36px;
+    justify-content: center;
+    align-items: center">کپی<i class="fa fa-copy"></i></a>
+                                      
+                                        <input type="text" id="copyText2" class="copy-input" placeholder="حساب کاربری (ID)" style="width:280px">
 										
-						<button class="btn btn-success" style="width:123px">
-                                        کپی
-                                        </button>
+						
                                     </div>
 									
                                     <div class="login-form-box-item-btn ">
@@ -303,13 +319,18 @@
                                     
 									</div>
 									<div class="login-form-box-item-input" style="flex-direction: unset;">
-								
-                                       
-                                        <input type="text " placeholder="حساب کاربری (ID)" style="margin-left:8px;width:250px">
+								<a onclick="copyText()" style="width:80px;background-color:blue;color:#fff;display: flex;
+    justify-content: center;
+    align-items: center">کپی<i class="fa fa-copy"></i></a>
+                                        
+                                        <input type="text " id="copyText" class="copy-input" placeholder="حساب کاربری (ID)" style="width:280px">
+										
+						
+                                        <!--<input type="text " placeholder="حساب کاربری (ID)" style="margin-left:8px;width:250px">
 										
 						<button class="btn btn-success" style="width:123px">
                                         کپی
-                                        </button>
+                                        </button>-->
                                     </div>
 												
                                     <div class="login-form-box-item-btn ">
@@ -366,6 +387,41 @@
         //Initialize Select2 Elements
         $('.select2').select2()
     });
+</script>
+<script>
+    function copyText() {
+        /* Get the text field */
+        var copyText = document.getElementById("copyText");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+
+        /* Alert the copied text */
+        // prompt("Copy to clipboard: Ctrl+C, Enter", copyText.value);
+
+        alert("متن "+copyText.value+" کپی شد. ");
+    }
+	
+	 function copyText2() {
+        /* Get the text field */
+        var copyText2 = document.getElementById("copyText2");
+
+        /* Select the text field */
+        copyText2.select();
+        copyText2.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText2.value);
+
+        /* Alert the copied text */
+        // prompt("Copy to clipboard: Ctrl+C, Enter", copyText.value);
+
+        alert("متن "+copyText2.value+" کپی شد. ");
+    }
 </script>
 
 </body>
